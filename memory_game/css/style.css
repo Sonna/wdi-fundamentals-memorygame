@@ -84,6 +84,15 @@ p {
   font-size: 18px;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
 .copyright {
   float: left;
 }
