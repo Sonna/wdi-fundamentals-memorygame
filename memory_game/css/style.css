@@ -1,11 +1,14 @@
 a {
-  color: #F15B31;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-left: 20px;
   margin-right: 20px;
+
+  /* Non-mentioned styles */
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 body {
@@ -14,7 +17,7 @@ body {
 }
 
 h1 {
-  color: #0D2C40;
+  /*color: #0D2C40;*/
   font-family: "Raleway", sans-serif;
   font-size: 45px;
   font-weight: 400;
@@ -23,11 +26,11 @@ h1 {
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
   color: #0D2C40;
-  letter-spacing: 1px;
-  font-weight: 400;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 header {
