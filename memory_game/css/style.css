@@ -1,9 +1,11 @@
 a {
-  font-family: "Raleway", sans-serif;
   color: #F15B31;
-  letter-spacing: 1px;
-  font-weight: 600;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 body {
@@ -35,6 +37,27 @@ header {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
+}
+
+img {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 40px;
+}
+
+main {
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  width: 850px;
+}
+
+nav {
+  background-color: #00A6B3;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 p {
