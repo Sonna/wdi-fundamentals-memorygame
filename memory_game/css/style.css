@@ -27,6 +27,10 @@ footer {
   text-transform: uppercase;
 }
 
+footer p {
+  font-family: "Raleway", sans-serif;
+}
+
 h1 {
   /*color: #0D2C40;*/
   font-family: "Raleway", sans-serif;
@@ -78,4 +82,12 @@ p {
   font-family: "Droid Serif", serif;
   line-height: 26px;
   font-size: 18px;
+}
+
+.copyright {
+  float: left;
+}
+
+.message {
+  float: right;
 }
