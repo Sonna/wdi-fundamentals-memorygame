@@ -1,5 +1,6 @@
 console.log("Up and running!");
 
+var score = 0;
 var cards = [
   {
     rank: "queen",
@@ -24,13 +25,20 @@ var cards = [
 ];
 var cardsInPlay = [];
 
+function updateScore() {
+  document.getElementById('score').innerHTML = score;
+}
+
 function checkForMatch() {
   if (cardsInPlay.length === 2) {
     if (cardsInPlay[0] === cardsInPlay[1]) {
       alert("You found a match!");
+      score++;
     } else {
       alert("Sorry, try again.");
     }
+    cardsInPlay = [];
+    updateScore();
   }
 }
 
@@ -54,3 +62,9 @@ function createBoard() {
   }
 }
 createBoard();
+
+function reset() {
+  document.getElementById('game-board').innerHTML = "";
+  createBoard();
+}
+document.getElementById('reset-game').addEventListener('click', reset);
