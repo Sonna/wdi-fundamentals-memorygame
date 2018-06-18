@@ -45,6 +45,7 @@ flipCard(0);
 flipCard(2);
 
 function createBoard() {
-  for (var i = 0; i < arrayName.length; i++) {
+  for (var i = 0; i < cards.length; i++) {
+    var cardElement = document.createElement('img');
   }
 }
