@@ -40,6 +40,7 @@ function flipCard() {
   console.log(cards[cardId].suit);
   console.log(cards[cardId].cardImage);
   cardsInPlay.push(cards[cardId].rank);
+  this.setAttribute('src', cards[cardId].cardImage);
   checkForMatch();
 }
 
