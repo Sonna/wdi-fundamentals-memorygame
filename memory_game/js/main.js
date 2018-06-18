@@ -25,6 +25,23 @@ var cards = [
 ];
 var cardsInPlay = [];
 
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ * @source [javascript \- How can I shuffle an array? \- Stack Overflow]
+ *         (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array)
+ */
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+  }
+  return a;
+}
+
 function updateScore() {
   document.getElementById('score').innerHTML = score;
 }
@@ -53,6 +70,8 @@ function flipCard() {
 }
 
 function createBoard() {
+  shuffle(cards);
+
   for (var i = 0; i < cards.length; i++) {
     var cardElement = document.createElement('img');
     cardElement.setAttribute('src', 'images/back.png');
