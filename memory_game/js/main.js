@@ -35,7 +35,7 @@ function checkForMatch() {
 }
 
 function flipCard(cardId) {
-  console.log("User flipped " + cards[cardId]);
+  console.log("User flipped " + cards[cardId].rank);
   cardsInPlay.push(cards[cardId]);
   checkForMatch();
 }
