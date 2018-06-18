@@ -41,8 +41,6 @@ function flipCard(cardId) {
   cardsInPlay.push(cards[cardId].rank);
   checkForMatch();
 }
-flipCard(0);
-flipCard(2);
 
 function createBoard() {
   for (var i = 0; i < cards.length; i++) {
@@ -53,3 +51,4 @@ function createBoard() {
     document.getElementById('game-board').appendChild(cardElement);
   }
 }
+createBoard();
